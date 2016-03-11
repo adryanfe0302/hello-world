@@ -1,0 +1,182 @@
+<html>
+<head>
+<style>
+*{margin:0px;}
+#container{width:100%;height:auto;}
+#scrool_area{margin:auto;height:800px;width:1280px;margin-top:50px;overflow:auto;overflow-x:hidden;}
+.header-fix{width:1270px;margin:auto;height:50px; position:fixed;z-index:100} 
+.header-fix2{width:1270px;margin:auto;height:50px; position:fixed;z-index:100;top: 0px;}  	
+.header{width:1260px;margin:auto;height:30px;background:silver;font-family: helvetica;font-size:14px;padding-left:10px;padding-top:20px;color:white;text-shadow:1px 1px #333;}
+.wrap{width:auto;height:auto;overflow:hidden;}    
+.info{width:1270px;margin:auto;height:600px;background:#ddd;}
+.fixed{position:fixed;}     
+#header-1{background:cyan;}   
+#header-2{background:red}
+#header-3{background:magenta;}
+#header-4{background:orange;}
+#header-5{background:purple;} 
+.bd1{border: 1px solid cyan;}
+.bd2{border:1px solid red;}
+.bd3{border:1px solid magenta;}
+.bd4{border:1px solid orange;}
+.bd5{border:1px solid purple;}  
+	
+.text{
+	padding: 10px;
+	font-family: helvetica;
+	font-size: 12px;
+	line-height: 30px;
+	}
+.img1{
+	padding: 10px;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	}	
+img{height: 350px;}	
+	
+</style>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+//$(document).ready(function(){
+//   var headposition=$(".header-fix").offset();    
+//   $("#scrool_area").scroll(function(){
+//        $("#header-2").offset(headposition);
+//   });
+//});    
+  
+$(document).ready(function(){
+    var headposition=$("#header-1").offset();
+    var infobox=$(".info").outerHeight(true);
+    var plus= 50;
+    
+    
+    $("#scrool_area").on('scroll', function() {
+            if ($(this).scrollTop() >= 0 ) { 
+              $('.header').css("top","0px");  
+              $('#header-1').offset(headposition).addClass('fixed').text("Header 1 fixed");
+             }
+        
+            if ($(this).scrollTop() > (infobox  + plus) ) {
+              $('.header').removeClass('fixed').css("top","0px")
+              $('#header-2').offset(headposition).addClass('fixed').text("Header 2 fixed");  
+			}
+        
+            if ($(this).scrollTop() > (infobox + plus) * 2 ) {
+              $('.header').removeClass('fixed').css("top","0px"); 
+              $('#header-3').offset(headposition).addClass('fixed').text("Header 3 fixed");
+                 
+            }
+            if ($(this).scrollTop() > (infobox + plus) * 3) {
+              $('.header').removeClass('fixed').css("top","0px");    
+              $('#header-4').offset(headposition).addClass('fixed').text("Header 4 fixed");
+            }
+        
+            if ($(this).scrollTop() > (infobox + plus) * 4 ) {
+              $('.header').removeClass('fixed').css("top","0px");    
+              $('#header-5').offset(headposition).addClass('fixed').text("Header 5 fixed");
+         }
+        
+    });
+   
+});
+        
+</script>
+</head>
+<body>
+<div id="container">
+    <div id="scrool_area">
+      
+
+            <div class="wrap"> 
+                <div id="header-1" class="header"> Header 1 </div>
+                <div class="info bd1"> 
+					
+					<div class="text">
+					Neuro-linguistic programming (NLP) is an approach to communication, personal development, and psychotherapy created by Richard Bandler and John Grinder in California, United States in the 1970s. Its creators claim a connection between the neurological processes ("neuro"), language ("linguistic") and behavioral patterns learned through experience ("programming") and that these can be changed to achieve specific goals in life.[1][2]
+
+Bandler and Grinder claim that the skills of exceptional people can be "modeled" using NLP methodology, then those skills can be acquired by anyone.[3][4][5][6][7] Bandler and Grinder also claim that NLP can treat problems such as phobias, depression, habit disorder, psychosomatic illnesses, myopia,[8] allergy, common cold,[9] and learning disorders, often in a single session.[10][11][12][13] NLP has been adopted by some hypnotherapists and in seminars marketed to business and government.[14][15]
+
+The balance of scientific evidence reveals NLP to be a largely discredited pseudoscience. Scientific reviews show it contains numerous factual errors,[14][16] and fails to produce the results asserted by proponents
+					</div>
+					<div class="img">
+						<div class="img1"><img src="http://80.86.92.76/~hmlindia/nlp/wp-content/uploads/2014/08/img_whatisnlp_circle.jpg"> </div>
+						<div class="img1"><img src="http://www.astralprojectiontravel.com/images/astralhead10.jpg"> </div>
+					</div>	
+					
+				</div>
+            </div>
+            <div class="wrap"> 
+                <div id="header-2" class="header"> Header 2 </div>
+                <div class="info bd2">
+					
+					<div class="img">
+						<div class="img1"><img src="http://80.86.92.76/~hmlindia/nlp/wp-content/uploads/2014/08/img_whatisnlp_circle.jpg"> </div>
+						<div class="img1"><img src="http://www.astralprojectiontravel.com/images/astralhead10.jpg"> </div>
+					</div>
+					<div class="text">
+				Astral projection (or astral travel) is an interpretation of an out-of-body experience (OBE) that assumes the existence of an "astral body" separate from the physical body and capable of travelling outside it.[1] Astral projection or travel denotes the astral body leaving the physical body to travel in an astral plane. The idea of astral travel is rooted in common worldwide religious accounts of the afterlife[2] in which the consciousness' or soul's journey or "ascent" is described in such terms as "an... out-of body experience, wherein the spiritual traveller leaves the physical body and travels in his/her subtle body (or dreambody or astral body) into ‘higher’ realms."[3] It is frequently reported in association with dreams, and forms of meditation.[4][5]
+
+Patients have reported feelings similar to the descriptions of astral projection induced through various hallucinogenic and hypnotic (including self-hypnotic) means. There is no scientific evidence that there is any measurable manifestation of a consciousness or soul which is separate from neural activity, and there is no scientific evidence for the contention that one can consciously leave the body and make observations. Attempts to verify that such has occurred have consistently failed in spite of the variety of pseudoscientific claims to the contrary
+					</div>
+					
+				</div>
+            </div>
+            <div class="wrap"> 
+                <div id="header-3" class="header"> Header 3 </div>
+                <div class="info bd3">
+				 
+					<div class="text">
+					Neuro-linguistic programming (NLP) is an approach to communication, personal development, and psychotherapy created by Richard Bandler and John Grinder in California, United States in the 1970s. Its creators claim a connection between the neurological processes ("neuro"), language ("linguistic") and behavioral patterns learned through experience ("programming") and that these can be changed to achieve specific goals in life.[1][2]
+
+Bandler and Grinder claim that the skills of exceptional people can be "modeled" using NLP methodology, then those skills can be acquired by anyone.[3][4][5][6][7] Bandler and Grinder also claim that NLP can treat problems such as phobias, depression, habit disorder, psychosomatic illnesses, myopia,[8] allergy, common cold,[9] and learning disorders, often in a single session.[10][11][12][13] NLP has been adopted by some hypnotherapists and in seminars marketed to business and government.[14][15]
+
+The balance of scientific evidence reveals NLP to be a largely discredited pseudoscience. Scientific reviews show it contains numerous factual errors,[14][16] and fails to produce the results asserted by proponents
+					</div>
+					<div class="img">
+						<div class="img1"><img src="http://80.86.92.76/~hmlindia/nlp/wp-content/uploads/2014/08/img_whatisnlp_circle.jpg"> </div>
+						<div class="img1"><img src="http://www.astralprojectiontravel.com/images/astralhead10.jpg"> </div>
+					</div>
+					
+				</div>
+            </div>
+		
+            <div class="wrap"> 
+                <div id="header-4" class="header"> Header 4 </div>
+                <div class="info bd4"> 
+					
+					<div class="text">
+					Neuro-linguistic programming (NLP) is an approach to communication, personal development, and psychotherapy created by Richard Bandler and John Grinder in California, United States in the 1970s. Its creators claim a connection between the neurological processes ("neuro"), language ("linguistic") and behavioral patterns learned through experience ("programming") and that these can be changed to achieve specific goals in life.[1][2]
+
+Bandler and Grinder claim that the skills of exceptional people can be "modeled" using NLP methodology, then those skills can be acquired by anyone.[3][4][5][6][7] Bandler and Grinder also claim that NLP can treat problems such as phobias, depression, habit disorder, psychosomatic illnesses, myopia,[8] allergy, common cold,[9] and learning disorders, often in a single session.[10][11][12][13] NLP has been adopted by some hypnotherapists and in seminars marketed to business and government.[14][15]
+
+The balance of scientific evidence reveals NLP to be a largely discredited pseudoscience. Scientific reviews show it contains numerous factual errors,[14][16] and fails to produce the results asserted by proponents
+					</div>
+					<div class="img">
+						<div class="img1"><img src="http://80.86.92.76/~hmlindia/nlp/wp-content/uploads/2014/08/img_whatisnlp_circle.jpg"> </div>
+						<div class="img1"><img src="http://www.astralprojectiontravel.com/images/astralhead10.jpg"> </div>
+					</div>
+					
+				</div>
+            </div>
+            <div class="wrap"> 
+                <div id="header-5" class="header"> Header 5 </div>
+                <div class="info bd5">
+					
+					<div class="img">
+						<div class="img1"><img src="http://80.86.92.76/~hmlindia/nlp/wp-content/uploads/2014/08/img_whatisnlp_circle.jpg"> </div>
+						<div class="img1"><img src="http://www.astralprojectiontravel.com/images/astralhead10.jpg"> </div>
+					</div>
+					<div class="text">
+				Astral projection (or astral travel) is an interpretation of an out-of-body experience (OBE) that assumes the existence of an "astral body" separate from the physical body and capable of travelling outside it.[1] Astral projection or travel denotes the astral body leaving the physical body to travel in an astral plane. The idea of astral travel is rooted in common worldwide religious accounts of the afterlife[2] in which the consciousness' or soul's journey or "ascent" is described in such terms as "an... out-of body experience, wherein the spiritual traveller leaves the physical body and travels in his/her subtle body (or dreambody or astral body) into ‘higher’ realms."[3] It is frequently reported in association with dreams, and forms of meditation.[4][5]
+
+Patients have reported feelings similar to the descriptions of astral projection induced through various hallucinogenic and hypnotic (including self-hypnotic) means. There is no scientific evidence that there is any measurable manifestation of a consciousness or soul which is separate from neural activity, and there is no scientific evidence for the contention that one can consciously leave the body and make observations. Attempts to verify that such has occurred have consistently failed in spite of the variety of pseudoscientific claims to the contrary
+					</div>
+					
+				</div>
+            </div>
+    </div>
+</div>    
+</body>
+</html>
